@@ -1,8 +1,8 @@
 class BigNumberError(Exception): # 사용자 정의 에러
-    def __init__(self, msg):
+    def __init__(self, msg): # 객체가 생성될 떄 자동으로 호출되는 매직 메소드
         self.msg = msg
 
-    def __str__(self):
+    def __str__(self):  # 객체를 문자열로 표현될 때 자동으로 호출되는 매직 메소드
         return "[에러코드 001]" + self.msg
 
 
