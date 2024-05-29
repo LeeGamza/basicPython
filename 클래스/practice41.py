@@ -13,7 +13,7 @@ class Unit:
 # 건물 클래스
 class BuildingUnit(Unit):
     def __init__(self, name, hp, location):
-        pass
+        pass # 정의하지 않고 일단 건너간다.
 
 # Unit을 상속받은 공격 유닛 생성 클래스
 
