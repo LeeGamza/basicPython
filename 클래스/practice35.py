@@ -1,3 +1,6 @@
+# init과 instance
+# init은 타언어에서의 생성자이다.
+
 class Unit:
     def __init__(self, name, hp, damage):
         self.name = name
@@ -9,4 +12,3 @@ class Unit:
 marine1 = Unit("마린", 40, 5) # instance
 marine2 = Unit("마린", 40, 5) # instance
 tank = Unit("탱크", 150, 35) # instance
-marine3 = Unit("마린",40)
