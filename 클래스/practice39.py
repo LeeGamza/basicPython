@@ -35,7 +35,7 @@ class Flyable:
 
     # 공중 유닛 이동 메소드
     def fly(self, name, location):
-        print(f"{self.name} : {location}방향으로 날아갑니다. [속도 {self.flying_speed}]")
+        print(f"{name} : {location}방향으로 날아갑니다. [속도 {self.flying_speed}]")
 
 class FlyableAttackUnit(AttackUnit, Flyable):
     def __init__(self, name, hp, damage, flying_speed):
@@ -43,4 +43,5 @@ class FlyableAttackUnit(AttackUnit, Flyable):
         Flyable.__init__(self, flying_speed)
 
 valkyrie = FlyableAttackUnit("발키리", 200, 6, 5) # 이름, 체력, 공격력, 공중 이동속도
+
 valkyrie.fly(valkyrie.name, "3시")
